@@ -12,7 +12,7 @@ const Navbar = () => {
   
   const navLink = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About Us" },
+    { href: "#about", label: "About" },
     { href: "#product", label: "Product" },
     { href: "#offer", label: "Offer" },
   ]
@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className='bg-white container mx-auto py-2 px-4 w-full md:flex justify-center'>
         {/* company name */}
         <div className='container flex items-center justify-start sm:px-6 lg:px-8 h-15 md:h-18 sm:h-13'>
-        <RiDrinksFill className='mr-2 ml-2'/> <span className='text-emerald-500 font-medium mr-2'>Marga</span> Smoothies
+        <span className='text-teal-500 text-2xl font-medium mr-2'>Marga</span><span className='text-2xl font-mono'> Smoothies</span>
 
         {/* mobile nav */}
         <button
@@ -31,7 +31,7 @@ const Navbar = () => {
           {isMenuOpen ? (<HiX className='h-6 w-6'/>) : (<HiMenu className='h-6 w-6'/>)}
         </button>
         {isMenuOpen && (
-            <div className='md:hidden mt-0 block bg-gray-100 border-t border-gray-100 py-4 w-full h-20'>
+            <div className='md:hidden mt-0 block bg-gray-100 border-t border-gray-100 py-4 w-fit h-20'>
               <div className='container mx-auto px-4 space-y-4'>
                   {navLink.map((link, index) => (
                     <a
@@ -47,6 +47,10 @@ const Navbar = () => {
               </div>
             </div>
         )}
+      <div className='container flex items-center justify-end md:float-end'>
+        <button className='bg-white border mx-0.5 border-blue-400 h-7 w-6 px-1 rounded-lg'><LuSun/></button>
+        <button className='bg-gray-800 border border-blue-400 h-7 w-6 px-1 rounded-lg'><LuMoon className='text-white'/></button>
+      </div>
         </div>
         
 
