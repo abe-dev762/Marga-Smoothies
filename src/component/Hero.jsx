@@ -28,7 +28,7 @@ const Hero = () => {
                 <img
                 alt='smoothies'
                 src={heroImage}
-                className='rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300'/>
+                className='rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300 opacity-90'/>
             </div>
         </div>
     </section>
