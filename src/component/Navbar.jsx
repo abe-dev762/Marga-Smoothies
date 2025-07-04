@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { RiDrinksFill, RiHexagonFill } from "react-icons/ri"
 import { LuSun, LuMoon } from "react-icons/lu"
 import { HiX, HiMenu} from "react-icons/hi"
+import DarkMode from './DarkMode'
 
 
 
@@ -19,7 +20,7 @@ const Navbar = () => {
 
   return (
   <nav className='fixed top-0 left-0 bg-white/90 backdrop-blur-sm z-50 border-0 border-b-blue-600 shadow-sm w-full drop-shadow-md'>
-    <div className='bg-white container mx-auto py-2 px-4 w-full md:flex justify-center'>
+    <div className='bg-amber-300 container mx-auto py-2 px-4 w-full md:flex justify-center'>
         {/* company name */}
         <div className='container flex items-center justify-start sm:px-6 lg:px-8 h-15 md:h-18 sm:h-13'>
         <span className='text-teal-500 text-2xl font-medium mr-2'>Marga</span><span className='text-2xl font-mono'> Smoothies</span>
@@ -47,10 +48,7 @@ const Navbar = () => {
               </div>
             </div>
         )}
-      <div className='container flex items-center justify-end md:float-end'>
-        <button className='bg-white border mx-0.5 border-blue-400 h-7 w-6 px-1 rounded-lg'><LuSun/></button>
-        <button className='bg-gray-800 border border-blue-400 h-7 w-6 px-1 rounded-lg'><LuMoon className='text-white'/></button>
-      </div>
+        
         </div>
         
 
@@ -69,7 +67,9 @@ const Navbar = () => {
         }
       </div>
       
-        
+        <div>
+                <DarkMode/>
+              </div>
 
     </div>
      
