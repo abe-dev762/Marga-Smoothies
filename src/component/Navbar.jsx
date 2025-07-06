@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
   <nav className='fixed top-0 left-0 bg-white/90 backdrop-blur-sm z-50 border-0 border-b-blue-600 shadow-sm w-full drop-shadow-md'>
-    <div className='bg-amber-300 container mx-auto py-2 px-4 w-full md:flex justify-center'>
+    <div className='bg-gray-100 container mx-auto py-2 px-4 w-full md:flex justify-center'>
         {/* company name */}
         <div className='container flex items-center justify-start sm:px-6 lg:px-8 h-15 md:h-18 sm:h-13'>
         <span className='text-teal-500 text-2xl font-medium mr-2'>Marga</span><span className='text-2xl font-mono'> Smoothies</span>
