@@ -4,6 +4,8 @@ import pitaya from '../assets/pitaya.svg'
 import avocado from '../assets/avocado.svg'
 import pinapple from '../assets/pineapple.svg'
 import { useState, useEffect } from 'react'
+import { motion } from 'motion/react'
+import { fadeIn } from '../utility/motion'
 
 
 const ProductData = [
@@ -57,7 +59,11 @@ const ProductCard = () => {
           {/* card section */}
 
           {ProductData.map((data) => (
-            <div className='px-2 mx-2' key={data.id}>
+            <motion.div
+            variants={fadeIn('left', 0.6)}
+            initial='hidden'
+            whileInView='show'
+            className='px-2 mx-2' key={data.id}>
               <img
               src={data.img}
               alt=''
@@ -68,7 +74,7 @@ const ProductCard = () => {
                 <p className='font-semibold text-sm'>Price: ${data.price}</p>
                 <button className='bg-amber-300 px-1 rounded-md text-white cursor-pointer'>Buy Now</button>
               </div>
-            </div>
+            </motion.div>
           ))}
           </div>
         </div>

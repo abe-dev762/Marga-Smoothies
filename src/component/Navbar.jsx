@@ -1,9 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { RiDrinksFill, RiHexagonFill } from "react-icons/ri"
-import { LuSun, LuMoon } from "react-icons/lu"
 import { HiX, HiMenu} from "react-icons/hi"
-import DarkMode from './DarkMode'
 
 
 
@@ -67,9 +65,6 @@ const Navbar = () => {
         }
       </div>
       
-        <div>
-                <DarkMode/>
-              </div>
 
     </div>
      
