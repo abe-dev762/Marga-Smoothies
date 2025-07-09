@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/Marga-Smoothies",
+  base: process.env.VITE_BASE_PATH || "/Marga-Smoothies",
 })
